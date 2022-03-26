@@ -6,7 +6,7 @@ public class Triangle extends Figure implements Prinatable {
 
     public Triangle(double a, double b, double c) {
 
-        if (a < 0 || b < 0 || c < 0) {
+        if (a <= 0 || b <= 0 || c <= 0) {
             throw new IllegalArgumentException("Bad argument value");
         } else {
             this.a = a;

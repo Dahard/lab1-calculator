@@ -4,7 +4,7 @@ public class Square extends Figure implements Prinatable {
 
     public Square(double a) {
 
-        if (a < 0) {
+        if (a <= 0) {
             throw new IllegalArgumentException("Bad argument value");
         } else {
             this.a = a;

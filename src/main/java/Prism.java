@@ -8,8 +8,8 @@ public class Prism implements Prinatable{
             throw new IllegalArgumentException("Base cannot be circle");
         }
 
-        if (base.calculatePerimater() % 3 != 0) {
-            throw  new IllegalArgumentException("Triangle is not Equilateral");
+        if (base instanceof Triangle && base.calculatePerimater() % 3 != 0) {
+            throw  new IllegalArgumentException("Triangle Base is not Equilateral");
         }
         this.base = base;
         this.h = h;

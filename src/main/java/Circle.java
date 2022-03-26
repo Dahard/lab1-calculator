@@ -3,7 +3,7 @@ public class Circle extends Figure implements Prinatable {
     double r;
 
     public Circle(double r) {
-        if (r < 0) {
+        if (r <= 0) {
                 throw new IllegalArgumentException("Bad argument value");
         } else {
             this.r = r;
