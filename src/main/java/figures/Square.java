@@ -1,3 +1,5 @@
+package figures;
+
 public class Square extends Figure implements Prinatable {
 
     double a;
@@ -14,6 +16,8 @@ public class Square extends Figure implements Prinatable {
     @Override
     public void print() {
         System.out.println("a: " + this.a);
+        System.out.println("Obwód kwadratu o podanych wymiarach wynosi: " + calculatePerimater());
+        System.out.println("Pole powierzchni kwadratu o podanych wymiarach wynosi: " + calculateArea());
     }
 
     @Override

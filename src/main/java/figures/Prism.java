@@ -1,3 +1,5 @@
+package figures;
+
 public class Prism implements Prinatable{
 
     Figure base;
@@ -9,7 +11,7 @@ public class Prism implements Prinatable{
         }
 
         if (base instanceof Triangle && base.calculatePerimater() % 3 != 0) {
-            throw  new IllegalArgumentException("Triangle Base is not Equilateral");
+            throw  new IllegalArgumentException("figures.Triangle Base is not Equilateral");
         }
         this.base = base;
         this.h = h;
@@ -27,5 +29,7 @@ public class Prism implements Prinatable{
     public void print() {
         System.out.println("h: " + h);
         System.out.println("Base area: " + base.area);
+        System.out.println("Pole powierzchni graniastosłupa prawidłowego o podanych wymiarach wynosi: " + calculateArea());
+        System.out.println("Objętość graniastosłupa prawidłowego o podanych wymiarach wynosi: " + calculateVolume());
     }
 }

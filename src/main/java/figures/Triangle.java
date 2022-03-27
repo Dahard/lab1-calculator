@@ -1,3 +1,5 @@
+package figures;
+
 public class Triangle extends Figure implements Prinatable {
 
     double a;
@@ -20,6 +22,8 @@ public class Triangle extends Figure implements Prinatable {
         System.out.println("a: " + this.a);
         System.out.println("b: " + this.b);
         System.out.println("c: " + this.c);
+        System.out.println("Obwód trójkąta o podanych wymiarach wynosi: " + calculatePerimater());
+        System.out.println("Pole powierzchni trójkąta o podanych wymiarach wynosi: " + calculateArea());
     }
 
     @Override
